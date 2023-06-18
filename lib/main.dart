@@ -7,7 +7,8 @@ import './screens/expense_screen.dart';
 import './screens/all_expenses.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
+  runApp(
+    ChangeNotifierProvider(
     create: (_) => DatabaseProvider(),
     child: const MyApp(),
   ));
